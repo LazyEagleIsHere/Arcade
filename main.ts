@@ -513,7 +513,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 function game_2_tutorial () {
     myMenu3.setButtonEventsEnabled(false)
-    game.splash("Second")
+    game.splash("First")
     for (let index = 0; index < 2; index++) {
         scene.setBackgroundImage(img`
             ................................................................................................................................................................
@@ -884,7 +884,7 @@ function game_2_tutorial () {
         ................................................................................................................................................................
         ................................................................................................................................................................
         `)
-    game.splash("Third")
+    game.splash("Second")
     for (let index = 0; index < 2; index++) {
         scene.setBackgroundImage(img`
             ................................................................................................................................................................
@@ -1259,7 +1259,7 @@ function game_2_tutorial () {
     game2()
 }
 function game2 () {
-    game.splash("Keyboard Settings")
+    game.splash("Keyboard Settings", "'Press Space Bar'")
     game.setDialogFrame(img`
         ..66666666666666666666..
         .6699999999999999999966.
