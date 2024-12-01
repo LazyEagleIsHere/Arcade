@@ -1258,9 +1258,10 @@ function game_2_tutorial () {
     game.splash("Understand?")
     game2()
 }
-function game2 () {
-    game.splash("Keyboard Settings", "'Press Space Bar'")
-    game.setDialogFrame(img`
+function game2() {
+    if (!vis) {
+        game.splash("Keyboard Settings", "'Press Space Bar'")
+        game.setDialogFrame(img`
         ..66666666666666666666..
         .6699999999999999999966.
         669991111111111111199966
@@ -1286,7 +1287,9 @@ function game2 () {
         .6699999999999999999966.
         ..66666666666666666666..
         `)
-    game.showLongText("Left Button: Move Leftward\\nRight Button: Move Rightward\\nSpacebar: Jump\\nButton X: Change character", DialogLayout.Full)
+        game.showLongText("Left Button: Move Leftward\\nRight Button: Move Rightward\\nSpacebar: Jump\\nButton X: Change character", DialogLayout.Full)
+    }
+    vis = true
     LemonForeverWalking = sprites.create(img`
         . . . . . . 1 1 1 1 1 . . . . . 
         . . . . 1 1 1 5 5 5 5 1 . . . . 
@@ -3551,6 +3554,7 @@ miniMenu.createMenuItem("Adventure Game")
 )
 let menu1 = fancyText.create("Hope You Enjoy", 0, 6, fancyText.art_deco_11)
 let menu2 = fancyText.create("The Game", 0, 6, fancyText.art_deco_11)
+let vis = false
 mainMenu.setTitle("Press space Bar")
 mainMenu.setDimensions(160, 50)
 mainMenu.setStyleProperty(miniMenu.StyleKind.Default, miniMenu.StyleProperty.Background, images.colorBlock(2))
