@@ -3555,7 +3555,7 @@ miniMenu.createMenuItem("Adventure Game")
 let menu1 = fancyText.create("Hope You Enjoy", 0, 6, fancyText.art_deco_11)
 let menu2 = fancyText.create("The Game", 0, 6, fancyText.art_deco_11)
 let vis = false
-mainMenu.setTitle("Press space Bar")
+mainMenu.setTitle("Press Space Bar")
 mainMenu.setDimensions(160, 50)
 mainMenu.setStyleProperty(miniMenu.StyleKind.Default, miniMenu.StyleProperty.Background, images.colorBlock(2))
 mainMenu.setStyleProperty(miniMenu.StyleKind.Selected, miniMenu.StyleProperty.Background, images.colorBlock(4))
