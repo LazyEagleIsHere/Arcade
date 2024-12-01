@@ -3562,7 +3562,7 @@ mainMenu.setStyleProperty(miniMenu.StyleKind.Selected, miniMenu.StyleProperty.Ba
 mainMenu.setStyleProperty(miniMenu.StyleKind.Title, miniMenu.StyleProperty.Background, images.colorBlock(5))
 mainMenu.setStyleProperty(miniMenu.StyleKind.Selected, miniMenu.StyleProperty.BorderColor, images.colorBlock(2))
 mainMenu.setStyleProperty(miniMenu.StyleKind.Selected, miniMenu.StyleProperty.Border, 1)
-mainMenu.setPosition(80, 117)
+mainMenu.setPosition(80, 119)
 menu1.setPosition(80, 10)
 menu2.setPosition(80, 24)
 mainMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
