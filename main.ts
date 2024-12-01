@@ -1287,6 +1287,7 @@ function game2() {
         .6699999999999999999966.
         ..66666666666666666666..
         `)
+        game.showLongText("Button A: Press Space Bar\nButton B: Press Button X", DialogLayout.Full)
         game.showLongText("Left Button: Move Leftward\\nRight Button: Move Rightward\\nSpacebar: Jump\\nButton X: Change character", DialogLayout.Full)
     }
     vis = true
