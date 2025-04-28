@@ -1287,7 +1287,7 @@ function game2() {
         ..66666666666666666666..
         `)
         game.showLongText("Keyboard Settings:\nButton A: Press Space Bar\nButton B: Press Button X", DialogLayout.Full)
-        game.showLongText("Left Button: Move Leftward\\nRight Button: Move Rightward\\nSpacebar: Jump\\nButton X: Change character", DialogLayout.Full)
+        game.showLongText("Left Arrow or A: Move Leftward\\nRight Arrow or D: Move Rightward\\nSpacebar: Jump\\nButton X: Change character", DialogLayout.Full)
     }
     vis = true
     LemonForeverWalking = sprites.create(img`
